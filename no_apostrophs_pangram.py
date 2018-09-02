@@ -8,7 +8,7 @@ Created on Sun Sep  2 19:48:14 2018
 
 #This checks, whether imput is an ukrainian pangram
 
-inputphrase='Жебракують філософи при ґанку церкви в Гадячі, ще й шатро їхнє знаємо.'
+inputphrase='Жебракують скотиняки при ґанку церкви в Гадячі, ще й шатро їхнє знаємо.'
 inputphrase=inputphrase.lower()
 
 ukralphabet=set()
@@ -27,4 +27,5 @@ if lettersinphrase==ukralphabet:
     print('Length of input =', len(inputphrase))
 else:
     print('This is not a pangram')
+    print('There is no following letters:', ukralphabet.difference(lettersinphrase))
 
